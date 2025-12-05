@@ -1,6 +1,6 @@
 import numpy as np
 
-input = open('day-4-input').read()
+input = open('day-4.input').read()
 grid = np.array([list(row) for row in input.split('\n')])
 marked = np.zeros(shape = (grid.shape[0], grid.shape[1]), dtype = str)
 accessible = 0
