@@ -13,8 +13,8 @@ def my_solution(file):
             for comparator_slice_end in range(1, len(id) // 2 + 1):
                 comparator_slice = id[0:comparator_slice_end]
 
-                for comparison_slice_start in range(comparator_slice_end, len(id), len(comparator_slice)):
-                    if (comparator_slice != id[comparison_slice_start:comparison_slice_start + len(comparator_slice)]):
+                for comparable_slice_start in range(comparator_slice_end, len(id), len(comparator_slice)):
+                    if (comparator_slice != id[comparable_slice_start:comparable_slice_start + len(comparator_slice)]):
                         break
                 else:
                     if (id in invalid_ids):
